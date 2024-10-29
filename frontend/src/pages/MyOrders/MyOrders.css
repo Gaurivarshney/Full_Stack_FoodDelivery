@@ -1,0 +1,106 @@
+/* General Container Styling */
+.my-orders {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+}
+
+.my-orders h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Order Card */
+.my-orders-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #DDBCA2;
+    border-radius: 8px;
+    background-color: #FDF7F5;
+    transition: box-shadow 0.3s ease;
+}
+
+.my-orders-order:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Icon */
+.my-orders-order img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+/* Order Details */
+.my-orders-order p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.my-orders-order p span {
+    color: #FF6F61;
+}
+
+/* Price and Item Count */
+.my-orders-order p:nth-child(3),
+.my-orders-order p:nth-child(4) {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Status Text */
+.my-orders-order b {
+    font-size: 0.9rem;
+    color: #FF6F61;
+}
+
+/* Track Order Button */
+.my-orders-order button {
+    padding: 8px 12px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.my-orders-order button:hover {
+    background-color: #E55850;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .my-orders-order {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .my-orders-order img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .my-orders-order p {
+        font-size: 0.85rem;
+    }
+
+    .my-orders-order button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
