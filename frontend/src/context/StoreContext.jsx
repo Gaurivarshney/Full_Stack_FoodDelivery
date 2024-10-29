@@ -4,7 +4,7 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props)=>{
     const currency ='$'
-    const url ='http://localhost:4000'
+    const url ='https://full-stack-fooddelivery-backend.onrender.com'
     const [cartItems , setCartItems]= useState({})
     const [token, setToken]= useState("")
     const [food_list, setFoodList]= useState([])
